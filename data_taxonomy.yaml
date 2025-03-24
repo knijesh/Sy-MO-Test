@@ -1,0 +1,73 @@
+version: 3
+domain: heart_failure_guidelines
+created_by: Synapxe-IBM
+seed_examples:
+  - context: Loop diuretics are recommended for providing rapid symptomatic relief
+      in heart failure patients, especially those with fluid overload. These
+      medications help lower left ventricular filling pressures and relieve
+      symptoms such as pulmonary congestion and peripheral edema. However, their
+      use requires careful monitoring due to potential side effects such as
+      electrolyte depletion and impaired renal function.
+    questions_and_answers:
+      - question: What is the primary benefit of using loop diuretics in heart failure
+          patients?
+        answer: Loop diuretics provide rapid symptomatic relief by reducing fluid
+          overload and relieving pulmonary congestion and peripheral edema.
+      - question: Why is close monitoring necessary when prescribing loop diuretics?
+        answer: Because they can lead to electrolyte depletion, hypotension, and renal
+          dysfunction if not carefully monitored.
+  - context: Cardiac rehabilitation is a key part of managing heart failure. It
+      includes supervised exercise training and patient education on self-care.
+      Participation in a multidisciplinary cardiac rehab program improves
+      functional capacity and reduces hospitalizations.
+    questions_and_answers:
+      - question: What are the two main components of a cardiac rehabilitation program
+          for heart failure patients?
+        answer: Supervised exercise training and patient education on disease-related
+          self-care.
+      - question: How does cardiac rehabilitation benefit heart failure patients?
+        answer: It improves functional capacity and reduces the risk of hospital
+          readmission.
+  - context: Advanced heart failure refers to cases where standard therapies no
+      longer provide adequate symptom relief or survival benefit. Heart
+      transplantation may be considered for suitable candidates, typically those
+      under 60 years of age with irreversible heart failure, preserved organ
+      function, and no major contraindications.
+    questions_and_answers:
+      - question: When should heart transplantation be considered in heart failure
+          management?
+        answer: When a patient has advanced heart failure unresponsive to optimal
+          medical or surgical therapy.
+      - question: What are some key criteria for heart transplant eligibility?
+        answer: Age under 60, LVEF below 20%, NYHA Class III or IV, preserved
+          liver/kidney function, and good psychosocial support.
+  - context: Acute heart failure may arise suddenly due to causes such as myocardial
+      infarction, valvular disease, or uncontrolled hypertension. Immediate
+      treatment aims to stabilize hemodynamics, improve oxygenation, and
+      identify underlying causes using diagnostics like echocardiography and
+      blood tests.
+    questions_and_answers:
+      - question: What is the first priority in managing a patient with acute heart
+          failure?
+        answer: Stabilizing the patient’s hemodynamics and ensuring adequate
+          oxygenation.
+      - question: What diagnostic tools are essential for evaluating acute heart failure?
+        answer: Echocardiography, chest X-ray, ECG, and blood tests including BNP
+          levels.
+  - context: Mineralocorticoid receptor antagonists (MRAs), such as spironolactone
+      and eplerenone, counteract the harmful effects of aldosterone in heart
+      failure. These include cardiac fibrosis, hypertrophy, and arrhythmias.
+      MRAs are known to improve symptoms, reduce hospitalizations, and enhance
+      survival in selected patients.
+    questions_and_answers:
+      - question: What harmful cardiac effects does aldosterone contribute to in heart
+          failure?
+        answer: Cardiac fibrosis, myocardial hypertrophy, and arrhythmogenesis.
+      - question: What are the benefits of using MRAs in heart failure treatment?
+        answer: MRAs improve symptoms, reduce hospitalizations, and increase survival.
+document_outline: Heart Failure Society Guidelines and Recommendations
+document:
+  repo: https://github.ibm.com/knijesh/synapxe-slm.git
+  commit: dd71181250e7c0c7a22fd808bcdc908e8e218a2a
+  patterns:
+    - heart_failure_guidelines.md
